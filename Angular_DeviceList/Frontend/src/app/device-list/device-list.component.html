@@ -1,0 +1,20 @@
+<h1 style="color: blue; text-align:center">Device List</h1>
+<div>
+  <table class="table table-striped">
+    <thead style="text-align: left;">
+      <tr>
+        <th scope="col-1" style="width:30%">Device ID</th>
+        <th scope="col-3" style="width:40%">Device Name</th>
+        <th scope="col-5" style="width:30%">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr (click) = 'onSelectedDevice(device)' *ngFor = 'let device of deviceList'>
+        <td><a [routerLink]="['/device-details', device.id]" routerLinkActive="active">{{device.id}}</a></td>
+        <td>{{device.name}}</td>
+        <td>{{device.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
