@@ -12,3 +12,5 @@ Developed an WeatherForecast API in ASP.NET MVC by OpenWeatherMap Weather API by
 You can find the logic for the developement of API inside the models, views and controller folders.
 Also developed the WeatherForecast API in Javascript, HTML, CSS using OpenWeatherMap Weather API and logic for the development of the API can be found in WeatherForecast_JS folder.
 
+3. Asp.NET_WebAPI
+Developed an employee web api in asp.net core by using the http methods 
