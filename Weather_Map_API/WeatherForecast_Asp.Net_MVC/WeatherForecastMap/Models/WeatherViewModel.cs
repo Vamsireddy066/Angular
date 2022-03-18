@@ -2,22 +2,34 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace WeatherForecastMap.Models
 {
     public class ResultViewModel
     {
+        [Required]
         public string City { get; set; }
+        [Required]
         public string Country { get; set; }
-        public string CloudCoverCondition { get; set; }
+        [Required]
+        public string CloudCoverConditions { get; set; }
+        [Required]
         public string Humidity { get; set; }
-        public string TempFeelsLike { get; set; }
-        public string Temp { get; set; }
-        public string TempMax { get; set; }
-        public string TempMin { get; set; }
+        [Required]
+        public string TemperatureFeelsLike { get; set; }
+        [Required]
+        public string Temperature { get; set; }
+        [Required]
+        public string TemperatureMax { get; set; }
+        [Required]
+        public string TemperatureMin { get; set; }
         public string WeatherIcon { get; set; }
+        [Required]
         public string AirPressure { get; set; }
+        [Required]
         public string WindSpeed { get; set; }
+        [Required]
         public string WindDirection { get; set; }
     }
 
