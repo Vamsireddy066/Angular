@@ -10,7 +10,7 @@ namespace WeatherForecastMap.Controllers
 {
     public class WeatherForecastMapController : Controller
     {
-        WeatherDBAccessLayer empdb = new WeatherDBAccessLayer();
+        WeatherDBAccessLayer weadb = new WeatherDBAccessLayer();
 
         [HttpGet]
         public ActionResult Create()
@@ -24,7 +24,7 @@ namespace WeatherForecastMap.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    string resp = empdb.AddWeatherRecord(WeatherEntities);
+                    string resp = weadb.AddWeatherRecord(WeatherEntities);
                     TempData["msg"] = resp;
                 }
             }
